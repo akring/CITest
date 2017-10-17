@@ -32,9 +32,8 @@ platform :ios do
       scheme: "CITest",
       silent: true,
       clean: true,
-      output_directory: "./IPA", # Destination directory. Defaults to current directory.
+      output_directory: "./", # Destination directory. Defaults to current directory.
       export_xcargs: "-allowProvisioningUpdates",
-      output_name: "CITest.ipa",
     )
     enable_automatic_code_signing(path: "CITest.xcodeproj")
     
